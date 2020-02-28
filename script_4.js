@@ -19,24 +19,28 @@ const entrepreneurs = [
   { first: 'Peter', last: 'Thiel', year: 1967 }
 ];
 
+// Filtre dans cette liste les entrepreneurs qui sont nés dans les années 70 ;
 entrepreneurs.forEach(Seventhy => {
+  // Objet des entrepreneurs étant née entre 1970 et 1979 inclus
    if (Seventhy['year'] >= 1970 && Seventhy['year'] <= 1979) 
-   // Objet des entrepreneurs étant née entre 1970 et 1979 inclus
    console.log(Seventhy), Seventhy['year'];
  });
 
-//  array = []
-//  entrepreneurs.forEach( FisrtAndLast => {
-//   array.push(`First Name: ${FisrtAndLast.first} Last name: ${FisrtAndLast.last} `)
-// })
-// console.log(array)
+ //Sors une array qui contient le prénom et le nom des entrepreneurs ;
+ array = []
+ entrepreneurs.forEach( FisrtAndLast => {
+  array.push(`First Name: ${FisrtAndLast.first} Last name: ${FisrtAndLast.last} `)
+})
+console.log(array)
 
-// array = []
-// entrepreneurs.forEach( YearsIfHeIsAlive => {
-//   array.push(`Name: ${YearsIfHeIsAlive.first} ${YearsIfHeIsAlive.last}, Age if he is Alive : ${2020 - YearsIfHeIsAlive.year} `)
-//   })
-// console.log(array)
+//Quel âge aurait chaque inventeur aujourd'hui ?
+array = []
+entrepreneurs.forEach( YearsIfHeIsAlive => {
+  array.push(`Age of ${YearsIfHeIsAlive.first} ${YearsIfHeIsAlive.last} in 2020 : ${2020 - YearsIfHeIsAlive.year} years `)
+  })
+console.log(array)
 
+//Trie les entrepreneurs par ordre alphabétique du nom de famille.
 array = []
 entrepreneurs.forEach( First => {
   array.push(`Name: ${First.first} `)

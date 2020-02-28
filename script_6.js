@@ -3,6 +3,7 @@ let arn ='CCUCGCCGGUACUUCUCG';
 var codon = arn.match(/.{3}/g);
 // Un tableau qui permettra de récupère la valeurs des codons suite aux décodage des déquences :D
 var array = [];
+
 // Une belle fonction anonymes
 let bio= (code) => {
   var i = 0;
